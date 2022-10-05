@@ -1,6 +1,6 @@
 //Get
 export async function obtenerClientes() {
-    const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjQ5MTU3L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjY0ODk4NTY4LCJleHAiOjE2NjQ5ODQ5NjgsIm5iZiI6MTY2NDg5ODU2OCwianRpIjoidEl0TldPbEpKZWM4UmVrdyIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ObYkvFowvvnJvfhL1XUmjBB6HwDylrRLnsPVACo83ig';
+    const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjQ5MTU0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjY0OTg1MjA4LCJleHAiOjE2NjUwNzE2MDgsIm5iZiI6MTY2NDk4NTIwOCwianRpIjoicEdTR2FFMVhDbnN0dlVjWCIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.WmN7Gqk79hDa54kEVeclgaUkbsTbIyx7KwjWXt02i3Y';
 
     const respuesta = await fetch((`${import.meta.env.VITE_API_URL}/proyecto/lista/1`), {
         headers: {
@@ -17,7 +17,7 @@ export async function obtenerClientes() {
 
 //Edictar
 export async function obtenerCliente(proyectoID) {
-    const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjQ5MTU3L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjY0ODk4NTY4LCJleHAiOjE2NjQ5ODQ5NjgsIm5iZiI6MTY2NDg5ODU2OCwianRpIjoidEl0TldPbEpKZWM4UmVrdyIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ObYkvFowvvnJvfhL1XUmjBB6HwDylrRLnsPVACo83ig';
+    const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjQ5MTU0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjY0OTg1MjA4LCJleHAiOjE2NjUwNzE2MDgsIm5iZiI6MTY2NDk4NTIwOCwianRpIjoicEdTR2FFMVhDbnN0dlVjWCIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.WmN7Gqk79hDa54kEVeclgaUkbsTbIyx7KwjWXt02i3Y';
 
 
 
@@ -37,7 +37,7 @@ export async function obtenerCliente(proyectoID) {
 //Post
 
 export async function agregarCliente(datos) {
-    const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjQ5MTU3L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjY0ODk4NTY4LCJleHAiOjE2NjQ5ODQ5NjgsIm5iZiI6MTY2NDg5ODU2OCwianRpIjoidEl0TldPbEpKZWM4UmVrdyIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ObYkvFowvvnJvfhL1XUmjBB6HwDylrRLnsPVACo83ig';
+    const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjQ5MTU0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjY0OTg1MjA4LCJleHAiOjE2NjUwNzE2MDgsIm5iZiI6MTY2NDk4NTIwOCwianRpIjoicEdTR2FFMVhDbnN0dlVjWCIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.WmN7Gqk79hDa54kEVeclgaUkbsTbIyx7KwjWXt02i3Y';
 
     console.log(datos)
     try {
@@ -63,7 +63,7 @@ export async function agregarCliente(datos) {
 
 
 export async function actualizarCliente(proyectoID, datos){
-    const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjQ5MTU3L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjY0ODk4NTY4LCJleHAiOjE2NjQ5ODQ5NjgsIm5iZiI6MTY2NDg5ODU2OCwianRpIjoidEl0TldPbEpKZWM4UmVrdyIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ObYkvFowvvnJvfhL1XUmjBB6HwDylrRLnsPVACo83ig';
+    const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjQ5MTU0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjY0OTg1MjA4LCJleHAiOjE2NjUwNzE2MDgsIm5iZiI6MTY2NDk4NTIwOCwianRpIjoicEdTR2FFMVhDbnN0dlVjWCIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.WmN7Gqk79hDa54kEVeclgaUkbsTbIyx7KwjWXt02i3Y';
 
     console.log(datos)
     try {
@@ -89,7 +89,7 @@ export async function actualizarCliente(proyectoID, datos){
     // Eliminar cliente
 
 export async function eliminarCliente(proyectoID){
-    const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjQ5MTU3L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjY0ODk4NTY4LCJleHAiOjE2NjQ5ODQ5NjgsIm5iZiI6MTY2NDg5ODU2OCwianRpIjoidEl0TldPbEpKZWM4UmVrdyIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ObYkvFowvvnJvfhL1XUmjBB6HwDylrRLnsPVACo83ig';
+    const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjQ5MTU0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjY0OTg1MjA4LCJleHAiOjE2NjUwNzE2MDgsIm5iZiI6MTY2NDk4NTIwOCwianRpIjoicEdTR2FFMVhDbnN0dlVjWCIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.WmN7Gqk79hDa54kEVeclgaUkbsTbIyx7KwjWXt02i3Y';
 
     try {
         const respuesta = await fetch((`${import.meta.env.VITE_API_URL}/proyecto/borrar/${proyectoID}`), {

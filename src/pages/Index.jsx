@@ -31,7 +31,7 @@ const Index = () => {
 
       {clientes.length ?(
         <table className="w-full mt-5 table-auto shadow bg-white">
-        <thead className="bg-blue-800 text-white">
+        <thead className="bg-dark-purple text-white">
         <tr>
           <th className='p-2'>Nombre</th>
           <th  className='p-2' >Contacto</th>

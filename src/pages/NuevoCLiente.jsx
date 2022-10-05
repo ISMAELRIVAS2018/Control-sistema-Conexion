@@ -71,6 +71,7 @@ function NuevoCLiente() {
           />
         </Form>
       </div>
+      
     </>
   );
 }

@@ -35,10 +35,10 @@ function Cliente({ informacion }) {
           {pro_estatus_ID}
         </p>
       </td>
-      <td className="p-6 flex gap-3">
+      <td className="p-6 flex gap-3 text-xs">
         <button
           type="button"
-          className="text-blue-600 hover:text-blue-700 uppercase font-bold text-xs"
+          className="text-blue-600 hover:text-blue-800 uppercase font-bold text-xs"
           onClick={() => navigate(`/clientes/${proyectoID}/editar`)}
         >
           Editar
@@ -55,11 +55,19 @@ function Cliente({ informacion }) {
         >
           <button
             type="submit"
-            className="text-red-600 hover:text-red-700 uppercase font-bold text-xs"
+            className="text-red-600 hover:text-red-800 uppercase font-bold text-xs"
           >
             Eliminar
           </button>
         </Form>
+
+        <button
+            type="submit"
+            className="text-yellow-400 hover:text-yellow-500 uppercase font-bold text-xs"
+            onClick={() => navigate(`/clientes/${proyectoID}/ver`)}
+          >
+            Ver cliente
+          </button>
       </td>
     </tr>
   );
